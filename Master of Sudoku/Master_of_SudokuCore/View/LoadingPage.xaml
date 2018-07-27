@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Master_of_Sudoku.View.LoadingPage"
+             AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+             AbsoluteLayout.LayoutFlags="All"
+             BackgroundColor="#C0808080"
+             Opacity="0.5"
+                     Padding="10, 0">
+    <ContentView.Content>
+        <StackLayout Orientation="Vertical"
+                         BackgroundColor="Transparent"
+                         HeightRequest="300"
+                         WidthRequest="300"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Start"
+                         Margin="0,20,0,0" >
+
+            <ActivityIndicator 
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                IsRunning="True"
+                IsVisible="True"
+                IsEnabled="True"
+                HeightRequest="300"
+                WidthRequest="300"
+                />
+            <!--<Label Text="Loading Game! Please wait..."/>-->
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

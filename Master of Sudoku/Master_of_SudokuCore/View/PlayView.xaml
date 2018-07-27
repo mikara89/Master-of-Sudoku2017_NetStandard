@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" NavigationPage.HasBackButton="False"
+             xmlns:control="clr-namespace:Master_of_Sudoku.CustomRenderers.Controls;assembly=Master_of_Sudoku"
+             xmlns:controlAds="clr-namespace:Master_of_Sudoku.CustomRenderers.AdMob;assembly=Master_of_Sudoku"
+             Title="{Binding Score,
+               StringFormat='Your Score is: {0}'}" BackgroundColor="{DynamicResource backgroundColor}" NavigationPage.HasNavigationBar="False"
+             x:Class="Master_of_Sudoku.View.PlayView">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="backgroundColor">#99CB55</Color>
+            <Color x:Key="ListbackgroundColor">#779E42</Color>
+            <Color x:Key="BorderListbackgroundColor">#496128</Color>
+            <Color x:Key="textColor">White</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <AbsoluteLayout>
+
+        <!-- Normal Page Content -->
+        <StackLayout AbsoluteLayout.LayoutBounds="0, 1, 1, 1"
+                     
+               AbsoluteLayout.LayoutFlags="All" >
+            <control:NavigationBarCustom ClickedPause="BackButton_Clicked"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid x:Name="grideMain" BackgroundColor="Black" Padding="0" Grid.Column="1" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid x:Name="gride00"
+                      BackgroundColor="Blue"
+                      Padding="0"
+                      Grid.Row="0"
+                      Grid.Column="0" 
+                  
+                      >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <control:NoPaddingButton x:Name="cell00" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="0"
+                        Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell01" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="0"
+                        Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell02" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="0"
+                        Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell10" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="1"
+                        Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell11" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="1"
+                        Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell12" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="1"
+                        Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell20" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="2"
+                        Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell21" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="2"
+                        Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell22" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="2"
+                        Text="X" BackgroundColor="White"/>
+
+                    </Grid>
+
+                    <Grid x:Name="gride01"
+ 
+                      Grid.Row="0"
+                      Grid.Column="1" 
+                  
+                      >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <control:NoPaddingButton x:Name="cell03" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="0"
+                     Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell04" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="0"
+                     Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell05" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="0"
+                     Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell13" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="1"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell14" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="1"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell15" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="1"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell23" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="2"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell24" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="2"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell25" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="2"
+                      Text="X" BackgroundColor="White"/>
+
+                    </Grid>
+                    <Grid x:Name="gride02"
+
+                      Grid.Row="0"
+                      Grid.Column="2" 
+                  
+                      >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <control:NoPaddingButton x:Name="cell06" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="0"
+                     Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell07" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="0"
+                     Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell08" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="0"
+                     Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell16" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="1"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell17" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="1"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell18" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="1"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell26" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="2"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell27" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="2"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell28" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="2"
+                      Text="X" BackgroundColor="White"/>
+
+                    </Grid>
+
+                    <!--ROW 1-->
+                    <Grid x:Name="gride10"
+
+                      Grid.Row="1"
+                      Grid.Column="0" 
+                  
+                      >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <control:NoPaddingButton x:Name="cell30" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="0"
+                     Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell31" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="0"
+                     Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell32" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="0"
+                     Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell40" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="1"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell41" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="1"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell42" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="1"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell50" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="2"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell51" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="2"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell52" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="2"
+                      Text="X" BackgroundColor="White"/>
+
+                    </Grid>
+
+                    <Grid x:Name="gride11"
+
+                      Grid.Row="1"
+                      Grid.Column="1" 
+                  
+                      >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <control:NoPaddingButton x:Name="cell33" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="0"
+                     Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell34" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="0"
+                     Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell35" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="0"
+                     Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell43" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="1"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell44" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="1"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell45" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="1"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell53" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="2"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell54" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="2"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell55" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="2"
+                      Text="X" BackgroundColor="White"/>
+
+                    </Grid>
+                    <Grid x:Name="gride12"
+
+                      Grid.Row="1"
+                      Grid.Column="2" 
+                  
+                      >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <control:NoPaddingButton x:Name="cell36" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="0"
+                     Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell37" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="0"
+                     Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell38" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="0"
+                     Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell46" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="1"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell47" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="1"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell48" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="1"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell56" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="2"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell57" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="2"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell58" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="2"
+                      Text="X" BackgroundColor="White"/>
+
+                    </Grid>
+                    <!--Row2-->
+
+                    <Grid x:Name="gride20"
+
+                      Grid.Row="2"
+                      Grid.Column="0" 
+                  
+                      >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <control:NoPaddingButton x:Name="cell60" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="0"
+                     Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell61" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="0"
+                     Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell62" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="0"
+                     Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell70" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="1"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell71" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="1"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell72" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="1"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell80" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="2"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell81" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="2"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell82" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="2"
+                      Text="X" BackgroundColor="White"/>
+
+                    </Grid>
+
+                    <Grid x:Name="gride21"
+
+                      Grid.Row="2"
+                      Grid.Column="1" 
+                  
+                      >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <control:NoPaddingButton x:Name="cell63" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="0"
+                     Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell64" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="0"
+                     Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell65" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="0"
+                     Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell73" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="1"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell74" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="1"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell75" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="1"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell83" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="2"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell84" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="2"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell85" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="2"
+                      Text="X" BackgroundColor="White"/>
+
+                    </Grid>
+                    <Grid x:Name="gride22"
+
+                      Grid.Row="2"
+                      Grid.Column="2" 
+                  
+                      >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <control:NoPaddingButton x:Name="cell66" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="0"
+                     Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell67" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="0"
+                     Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell68" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="0"
+                     Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell76" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="1"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell77" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="1"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell78" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="1"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell86" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="2"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell87" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="2"
+                      Text="X" BackgroundColor="White"/>
+                        <control:NoPaddingButton x:Name="cell88" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="2"
+                      Text="X" BackgroundColor="White"/>
+
+                    </Grid>
+                </Grid>
+            </Grid>
+           
+            <Label x:Name="lblText"
+                   HorizontalOptions="FillAndExpand" 
+                   VerticalOptions="FillAndExpand" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center">
+            </Label>
+        </StackLayout>
+        <ContentView x:Name="overlay"
+                     AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                     AbsoluteLayout.LayoutFlags="All"
+                     IsVisible="False"
+                     BackgroundColor="#C0808080"
+                     Padding="10, 0">
+            <StackLayout Orientation="Vertical"
+                         BackgroundColor="White"
+                         HeightRequest="175"
+                         WidthRequest="300"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Start"
+                         Margin="0,20,0,0" >
+                <Grid Padding="5" BackgroundColor="Black">
+                    <Label BackgroundColor="Black"
+                           FontSize="18"
+                           TextColor="White"
+                           HorizontalOptions="Fill"
+                           Text="Enter number between 1 and 9" />
+                </Grid>
+
+                <Entry x:Name="EnteredName"
+                       Placeholder="Your number..."
+                       TextColor="Black"
+                       Keyboard="Numeric"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="Center"
+                       WidthRequest="250" />  
+
+                <StackLayout Orientation="Horizontal"
+                             HorizontalOptions="Center">
+
+                    <Button Text="OK" FontSize="Large"
+                            VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="Center"
+                            Clicked="OnOKButtonClicked" />
+
+                    <Button Text="Cancel" FontSize="Large"
+                            VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="Center"
+                            Clicked="OnCancelButtonClicked"/>
+
+                </StackLayout>
+
+            </StackLayout>
+        </ContentView>
+        <controlAds:AdMobView  WidthRequest="320" 
+                               HeightRequest="50" 
+                               AbsoluteLayout.LayoutBounds="0.5,1,320,50" 
+                               AbsoluteLayout.LayoutFlags="PositionProportional"
+                               />
+    </AbsoluteLayout>
+</ContentPage>

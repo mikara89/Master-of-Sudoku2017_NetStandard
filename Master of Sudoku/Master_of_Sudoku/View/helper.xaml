@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Master_of_Sudoku.View.helper">
+    <!--<Grid Padding="2" BackgroundColor="Blue">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="50"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="cell00" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="0"
+                       Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell01" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="0"
+                 Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell02" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="0"
+                 Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell03" HorizontalOptions="FillAndExpand" Grid.Column="3" Grid.Row="0"
+                 Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell04" HorizontalOptions="FillAndExpand" Grid.Column="4" Grid.Row="0"
+                 Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell05" HorizontalOptions="FillAndExpand" Grid.Column="5" Grid.Row="0"
+                 Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell06" HorizontalOptions="FillAndExpand" Grid.Column="6" Grid.Row="0"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell07" HorizontalOptions="FillAndExpand" Grid.Column="7" Grid.Row="0"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell08" HorizontalOptions="FillAndExpand" Grid.Column="8" Grid.Row="0"
+                  Text="X" BackgroundColor="White"  />
+
+            <Button x:Name="cell10" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="1"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell11" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="1"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell12" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="1"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell13" HorizontalOptions="FillAndExpand" Grid.Column="3" Grid.Row="1"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell14" HorizontalOptions="FillAndExpand" Grid.Column="4" Grid.Row="1"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell15" HorizontalOptions="FillAndExpand" Grid.Column="5" Grid.Row="1"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell16" HorizontalOptions="FillAndExpand" Grid.Column="6" Grid.Row="1"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell17" HorizontalOptions="FillAndExpand" Grid.Column="7" Grid.Row="1"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell18" HorizontalOptions="FillAndExpand" Grid.Column="8" Grid.Row="1"
+                  Text="X" BackgroundColor="White"  />
+
+            <Button x:Name="cell20" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="2"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell21" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="2"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell22" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="2"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell23" HorizontalOptions="FillAndExpand" Grid.Column="3" Grid.Row="2"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell24" HorizontalOptions="FillAndExpand" Grid.Column="4" Grid.Row="2"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell25" HorizontalOptions="FillAndExpand" Grid.Column="5" Grid.Row="2"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell26" HorizontalOptions="FillAndExpand" Grid.Column="6" Grid.Row="2"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell27" HorizontalOptions="FillAndExpand" Grid.Column="7" Grid.Row="2"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell28" HorizontalOptions="FillAndExpand" Grid.Column="8" Grid.Row="2"
+                  Text="X" BackgroundColor="White"  />
+
+            -->
+    <!--<Button x:Name="cell30" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="2"
+                  Text="X" BackgroundColor="White"  />
+                <Button x:Name="cell31" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="2"
+                  Text="X" BackgroundColor="White"  />
+                <Button x:Name="cell32" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="2"
+                  Text="X" BackgroundColor="White"  />
+                <Button x:Name="cell33" HorizontalOptions="FillAndExpand" Grid.Column="3" Grid.Row="2"
+                  Text="X" BackgroundColor="White"  />
+                <Button x:Name="cell34" HorizontalOptions="FillAndExpand" Grid.Column="4" Grid.Row="2"
+                  Text="X" BackgroundColor="White"  />
+                <Button x:Name="cell35" HorizontalOptions="FillAndExpand" Grid.Column="5" Grid.Row="2"
+                  Text="X" BackgroundColor="White"  />
+                <Button x:Name="cell36" HorizontalOptions="FillAndExpand" Grid.Column="6" Grid.Row="2"
+                  Text="X" BackgroundColor="White"  />
+                <Button x:Name="cell37" HorizontalOptions="FillAndExpand" Grid.Column="7" Grid.Row="2"
+                  Text="X" BackgroundColor="White"  />
+                <Button x:Name="cell38" HorizontalOptions="FillAndExpand" Grid.Column="8" Grid.Row="2"
+                  Text="X" BackgroundColor="White"  />-->
+    <!--
+
+            <Button x:Name="cell30" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="3"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell31" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="3"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell32" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="3"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell33" HorizontalOptions="FillAndExpand" Grid.Column="3" Grid.Row="3"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell34" HorizontalOptions="FillAndExpand" Grid.Column="4" Grid.Row="3"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell35" HorizontalOptions="FillAndExpand" Grid.Column="5" Grid.Row="3"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell36" HorizontalOptions="FillAndExpand" Grid.Column="6" Grid.Row="3"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell37" HorizontalOptions="FillAndExpand" Grid.Column="7" Grid.Row="3"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell38" HorizontalOptions="FillAndExpand" Grid.Column="8" Grid.Row="3"
+                  Text="X" BackgroundColor="White"  />
+
+            <Button x:Name="cell40" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="4"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell41" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="4"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell42" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="4"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell43" HorizontalOptions="FillAndExpand" Grid.Column="3" Grid.Row="4"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell44" HorizontalOptions="FillAndExpand" Grid.Column="4" Grid.Row="4"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell45" HorizontalOptions="FillAndExpand" Grid.Column="5" Grid.Row="4"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell46" HorizontalOptions="FillAndExpand" Grid.Column="6" Grid.Row="4"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell47" HorizontalOptions="FillAndExpand" Grid.Column="7" Grid.Row="4"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell48" HorizontalOptions="FillAndExpand" Grid.Column="8" Grid.Row="4"
+                  Text="X" BackgroundColor="White"  />
+
+            <Button x:Name="cell50" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="5"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell51" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="5"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell52" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="5"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell53" HorizontalOptions="FillAndExpand" Grid.Column="3" Grid.Row="5"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell54" HorizontalOptions="FillAndExpand" Grid.Column="4" Grid.Row="5"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell55" HorizontalOptions="FillAndExpand" Grid.Column="5" Grid.Row="5"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell56" HorizontalOptions="FillAndExpand" Grid.Column="6" Grid.Row="5"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell57" HorizontalOptions="FillAndExpand" Grid.Column="7" Grid.Row="5"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell58" HorizontalOptions="FillAndExpand" Grid.Column="8" Grid.Row="5"
+                  Text="X" BackgroundColor="White"  />
+
+            <Button x:Name="cell60" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="6"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell61" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="6"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell62" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="6"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell63" HorizontalOptions="FillAndExpand" Grid.Column="3" Grid.Row="6"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell64" HorizontalOptions="FillAndExpand" Grid.Column="4" Grid.Row="6"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell65" HorizontalOptions="FillAndExpand" Grid.Column="5" Grid.Row="6"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell66" HorizontalOptions="FillAndExpand" Grid.Column="6" Grid.Row="6"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell67" HorizontalOptions="FillAndExpand" Grid.Column="7" Grid.Row="6"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell68" HorizontalOptions="FillAndExpand" Grid.Column="8" Grid.Row="6"
+                  Text="X" BackgroundColor="White"  />
+
+            <Button x:Name="cell70" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="7"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell71" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="7"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell72" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="7"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell73" HorizontalOptions="FillAndExpand" Grid.Column="3" Grid.Row="7"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell74" HorizontalOptions="FillAndExpand" Grid.Column="4" Grid.Row="7"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell75" HorizontalOptions="FillAndExpand" Grid.Column="5" Grid.Row="7"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell76" HorizontalOptions="FillAndExpand" Grid.Column="6" Grid.Row="7"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell77" HorizontalOptions="FillAndExpand" Grid.Column="7" Grid.Row="7"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell78" HorizontalOptions="FillAndExpand" Grid.Column="8" Grid.Row="7"
+                  Text="X" BackgroundColor="White"  />
+
+            <Button x:Name="cell80" HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="8"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell81" HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="8"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell82" HorizontalOptions="FillAndExpand" Grid.Column="2" Grid.Row="8"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell83" HorizontalOptions="FillAndExpand" Grid.Column="3" Grid.Row="8"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell84" HorizontalOptions="FillAndExpand" Grid.Column="4" Grid.Row="8"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell85" HorizontalOptions="FillAndExpand" Grid.Column="5" Grid.Row="8"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell86" HorizontalOptions="FillAndExpand" Grid.Column="6" Grid.Row="8"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell87" HorizontalOptions="FillAndExpand" Grid.Column="7" Grid.Row="8"
+                  Text="X" BackgroundColor="White"  />
+            <Button x:Name="cell88" HorizontalOptions="FillAndExpand" Grid.Column="8" Grid.Row="8"
+                  Text="X" BackgroundColor="White"  />
+        </Grid>-->
+</ContentPage>

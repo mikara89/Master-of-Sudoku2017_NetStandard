@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" package="com.MikaraCo.Master_of_Sudoku" android:versionCode="4" android:versionName="1.4.0">
+	<uses-sdk android:minSdkVersion="15" />
+	<application android:label="Master of Sudoku" android:icon="@drawable/icon"></application>
+</manifest>
